@@ -5,6 +5,7 @@ description: "Repositorio de Aplicaciones."
 baseurl: ""
 url: "http://www.yordanreyes.wordpress.com"
 twitter_username: yordanbtc
+instagram_username: yordanbtc
 
 # Build settings
 markdown: kramdown
