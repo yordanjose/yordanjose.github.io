@@ -32,7 +32,7 @@ image: /assets/imgs/thumbs/gen-addr.png
         <div class="compression-flag hex-middle">01</div>
         <div class="checksum-pk checksum hex-right"></div>
       </div>
-      <div class="information step2 information-arrow-bottom-left"><span class="title">2.</span> Prepend version number.</div>
+      <div class="information step2 information-arrow-bottom-left"><span class="title">2.</span> Anteponer el número de versión.</div>
       <div class="information step3 information-arrow-bottom-right"><span class="title">3.</span> Anteponer el número de versión.</div>
       <div class="information step4 information-arrow-bottom-left"><span class="title">4.</span> Anexar suma de comprobación. La suma de verificación son los primeros 4 bytes del hash sha256 doble de lo que sea que se esté revisando.</div>
     </div>
