@@ -1,5 +1,5 @@
 ---
-title: Graphical Address Generator
+title: Generador gráfico de direcciones
 js: 
   - /js/btc.min.js
   - /js/wallet-gen.js 
