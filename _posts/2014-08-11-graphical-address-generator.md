@@ -5,21 +5,21 @@ js:
   - /js/wallet-gen.js 
 css: 
   - /css/wallet-gen.css
-excerpt: <p>Gaze into the inner workings of a bitcoin address.</p>
+excerpt: <p>Observe el funcionamiento interno de una dirección bitcoin.</p>
 image: /assets/imgs/thumbs/gen-addr.png
 ---
 
-<div>This was built for academic purposes.  If you want a secure address, read <a href="https://en.bitcoin.it/wiki/Paper_wallet" target="_blank">this.</a></div>
+<div>Esto fue construido con fines académicos. Si desea una dirección segura, lea <a href="https://en.bitcoin.it/wiki/Paper_wallet" target="_blank">this.</a></div>
 <div class="private">
-<h2 class="section-header">Generate Private Key</h2>
+<h2 class="section-header">Generar clave privada</h2>
 <div class="private-key">
   <div class="container">
-    <input id="passphrase" type="text" name="passphrase" placeholder="Type passphrase here...">
+    <input id="passphrase" type="text" name="passphrase" placeholder="Escriba la contraseña aquí...">
     <div>
       <img src="/assets/imgs/wallet-gen/sha-expand.svg" />
     </div>
     <div class="hex-container hex-padding pk"></div>
-    <div class="information information-arrow-left-bottom step1"><span class="title">1.</span> Private key is 256 random bits.</div>
+    <div class="information information-arrow-left-bottom step1"><span class="title">1.</span>La clave privada es de 256 bits aleatorios.</div>
   </div>
 </div>
 
@@ -33,8 +33,8 @@ image: /assets/imgs/thumbs/gen-addr.png
         <div class="checksum-pk checksum hex-right"></div>
       </div>
       <div class="information step2 information-arrow-bottom-left"><span class="title">2.</span> Prepend version number.</div>
-      <div class="information step3 information-arrow-bottom-right"><span class="title">3.</span> Append compression flag.</div>
-      <div class="information step4 information-arrow-bottom-left"><span class="title">4.</span> Append checksum. Checksum is the first 4 bytes of double sha256 hash of whatever is being checkedsum'ed.</div>
+      <div class="information step3 information-arrow-bottom-right"><span class="title">3.</span> Anteponer el número de versión.</div>
+      <div class="information step4 information-arrow-bottom-left"><span class="title">4.</span> Anexar suma de comprobación. La suma de verificación son los primeros 4 bytes del hash sha256 doble de lo que sea que se esté revisando.</div>
     </div>
   </div>
 
@@ -44,18 +44,18 @@ image: /assets/imgs/thumbs/gen-addr.png
       <div>
         <div class="private-wif hex-container hex-padding"></div>
       </div>
-      <div class="information information-arrow-left-top step5"><span class="title">5.</span> Base58 encoded data is easier to read and manage.  The "double-arrows" indicate this is reversible.</div>
+      <div class="information information-arrow-left-top step5"><span class="title">5.</span> Los datos codificados en Base58 son más fáciles de leer y administrar. Las "flechas dobles" indican que esto es reversible.</div>
     </div>
   </div>
 </div>
 </div>
 
 <div class="public">
-<h2 class="section-header">Generate Public Key</h2>
+<h2 class="section-header">Generar clave pública</h2>
 <div class="public-equation">
   <div class="pub-key-label">k</div> = <span class="hex-container hex-padding pk"></span> * 
   <img src="/assets/imgs/wallet-gen/elliptic-curve.gif" />
-  <div class="information information-arrow-left-top step6"><span class="title">6.</span> Multiply the private key by the elliptic curve generator point to get the public key.  The public key is a point on the elliptic curve and has x and y coordinates.
+  <div class="information information-arrow-left-top step6"><span class="title">6.</span> Multiplique la clave privada por el punto generador de curva elíptica para obtener la clave pública. La clave pública es un punto en la curva elíptica y tiene coordenadas xey.
   </div>
 </div>
 
@@ -93,7 +93,7 @@ image: /assets/imgs/thumbs/gen-addr.png
     <div class="public-key-x hex-right">A</div>
   </div>
 
-  <div class="information step7"><span class="title">7.</span> Use parity of y coordinate and full x coordinate to represent the public key.</div>
+  <div class="information step7"><span class="title">7.</span> Utilice la paridad de la coordenada (y) y la coordenada (x) completa para representar la clave pública.</div>
 </div>
 
 <div>
@@ -102,7 +102,7 @@ image: /assets/imgs/thumbs/gen-addr.png
     <div class="ripe-hash">
       <div class="ripe160 hex-container hex-padding">N/A</div>
     </div>
-    <div class="information step8 information-arrow-left-top"><span class="title">8.</span> Hash public key twice.  This obfuscates the public key and shortens it.</div>
+    <div class="information step8 information-arrow-left-top"><span class="title">8.</span> Hash la clave pública dos veces. Esto ofusca la clave pública y la abrevia.</div>
   </div>
 </div>
 </div>
@@ -114,8 +114,8 @@ image: /assets/imgs/thumbs/gen-addr.png
       <div class="ripe160 hex-middle"></div>
       <div class="hex-right checksum address-checksum"></div>
     </div>
-    <div class="information information-arrow-bottom-middle step9"><span class="title">9.</span> Prepend version (version number is different than in step 2)</div>
-    <div class="information information-arrow-bottom-middle step10"><span class="title">10.</span> Append checksum (same method as step 4)</div>
+    <div class="information information-arrow-bottom-middle step9"><span class="title">9.</span> Anteponer la versión (el número de versión es diferente al del paso 2)</div>
+    <div class="information information-arrow-bottom-middle step10"><span class="title">10.</span> Agregar suma de comprobación (mismo método que en el paso 4)</div>
   </div>
   <div>
     <div class="container">
@@ -123,7 +123,7 @@ image: /assets/imgs/thumbs/gen-addr.png
       <div>
         <div class="hex-container hex-padding public-address">N/A</div>
       </div>
-      <div class="information information-arrow-left-top step11"><span class="title">11.</span> After another base58 encoding, we have our public address :)</div>
+      <div class="information information-arrow-left-top step11"><span class="title">11.</span> Después de otra codificación base58, tenemos nuestra dirección pública :)</div>
     </div>
   </div>
 </div>
