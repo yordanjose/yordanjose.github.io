@@ -9,7 +9,7 @@ excerpt: <p>Observe el funcionamiento interno de una dirección bitcoin.</p>
 image: /assets/imgs/thumbs/gen-addr.png
 ---
 
-<div>Esto fue construido con fines académicos. Si desea una dirección segura, lea <a href="https://en.bitcoin.it/wiki/Paper_wallet" target="_blank">this.</a></div>
+<div>Esto fue construido con fines académicos. Si desea una dirección segura, lea <a href="https://en.bitcoin.it/wiki/Paper_wallet" target="_blank">Aquí.</a></div>
 <div class="private">
 <h2 class="section-header">Generar clave privada</h2>
 <div class="private-key">
